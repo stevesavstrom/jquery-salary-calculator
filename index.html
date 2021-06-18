@@ -10,6 +10,67 @@
 	<title>Salary Calculator</title>
 </head>
 <body>
+	<section id="header">
+		<h1>Salary Calculator</h1>
+	</section>
+
+	<h3>Add Employee</h3>
+	<section>
+		<input type="text" id="firstName" placeholder="First Name">
+		<input type="text" id="lastName" placeholder="Last Name">
+		<input type="text" id="id" placeholder="ID">
+		<input type="text" id="title" placeholder="Title">
+		<input type="text" id="salary" placeholder="Salary">
+	</section>
+
+	<button id="submitButton">Submit</button>
+
+	<table>
+			<tr>
+				<th>First Name</th>
+			  	<th>Last Name</th>
+			  	<th>ID</th>
+			  	<th>Title</th>
+			  	<th>Salary</th>
+			  	<th>Delete</th>
+			</tr>
+
+			<tr>
+				<td>Steve</td>
+				<td>Savstrom</td>
+				<td>45505</td>
+				<td>Software Developer</td>
+				<td>$100,000</td>
+				<td>
+					<button id="deleteButton">Delete</button>
+				</td>
+			</tr>
+
+			<tr>
+				<td>Colleen</td>
+				<td>Savstrom</td>
+				<td>99742</td>
+				<td>Graphic Designer</td>
+				<td>$99,000</td>
+				<td>
+					<button id="deleteButton">Delete</button>
+				</td>
+			</tr>
+
+			<tr>
+				<td>Lauren</td>
+				<td>Savstrom</td>
+				<td>54762</td>
+				<td>Social Worker</td>
+				<td>$73,000</td>
+				<td>
+					<button id="deleteButton">Delete</button>
+				</td>
+			</tr>
+		</table>
+
+		<h3 id="totalMonthly">Total Monthly: <span id="totalOut">$100,000</span></h3>
+
 	
 </body>
 </html>
