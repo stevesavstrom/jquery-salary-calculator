@@ -22,26 +22,34 @@ button {
 
 table {
 	border-collapse: collapse;
-	width: 100%;
+	table-layout: fixed;
+	width: 90vw;
+	word-wrap: break-word;
 }
 
 th {
 	background-color:blue;
 	color: #ffffff;
 	border: 1px solid gray;
-	text-align: center;
+	text-align: left;
 	padding: 15px;
 }
   
 td {
 	border: 1px solid gray;
-	text-align: center;
+	text-align: left;
 	padding: 15px;
 }
-  
-tr:nth-child(even) {
-	background-color: #ffffff;
-}
+
+ul {
+	list-style-type: none;
+	text-align: left;
+	word-spacing: 50px;
+  }
+
+li{
+	display: inline;
+  }
 
 #totalMonthly {
 	text-align: center;
