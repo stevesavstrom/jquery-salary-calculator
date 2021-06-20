@@ -9,11 +9,11 @@ $( document ).ready( readyNow );
 
 function readyNow(){
 // handle click event
-$( '#submitButton').on('click', addEmployee);
+$('#submitButton').on('click', addEmployee);
 // target priceOut by id
-let el = $( '#totalOut' )
+let el = $('#totalOut')
 el.empty();
-el.append('$', totalValue );
+el.append('$', totalValue);
 // Delete employee on click
 $('#employeesOut').on('click', '#employeeRow', deleteEmployee);
 } // end readyNow
@@ -54,6 +54,7 @@ function addEmployee(){
 	calculateTotal();
   }
 
+// Display employee in DOM
   function displayEmployees(){
 	console.log( 'in displayEmployees' );
 	// target output by id
@@ -71,7 +72,7 @@ function addEmployee(){
 		  <td>${employee.lastName}</td>
 		  <td>${employee.id}</td>
 		  <td>${employee.title}</td>
-		  <td>${employee.salary}</td>
+		  <td>$${employee.salary}</td>
 		  <td><button id="deleteButton"><img src="trash.png"></button></td>
 		</tr>
 	  </table>
