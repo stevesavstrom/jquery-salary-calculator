@@ -60,10 +60,10 @@ function addEmployee(){
 	let el = $('#employeesOut')
 	// empty
 	el.empty();
-	// loop through garage array
+	// loop through employee array
 	for (let employee of employees) {
 	  console.log(employee);
-	  // Displays inputs in DOM. Shout out to Matt for help on the image syntax!
+	  // Displays inputs in DOM.
 	  el.append(` 
 	  <table>
 		<tr id="employeeRow">
@@ -77,7 +77,7 @@ function addEmployee(){
 	  </table>
 	  `);
 	}
-  } // end displayGarage
+  } // end displayEmployees
 
   function calculateTotal(){
 	console.log( 'in calculateTotal' );
