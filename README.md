@@ -12,14 +12,14 @@ The application includes the following features and functionality:
 
 [x] Using the stored information, calculate monthly costs and append this to the DOM.
 
-[ ] If total monthly cost exceeds $20,000, add a red background color to the total monthly cost.
+[x] If total monthly cost exceeds $20,000, add a red background color to the total monthly cost.
 
 [x] The application should have an input form that collects employee first name, last name, ID number, job title, annual salary.
 
 [x] Create a delete button.
 
-[ ] Delete button removes an employee from the DOM.
+[x] Delete button removes an employee from the DOM.
 
-[ ] Create a delete button that removes an employee from the DOM. For Base mode, it does not need to remove that Employee's salary from the reported total.
+[x] Create a delete button that removes an employee from the DOM. For Base mode, it does not need to remove that Employee's salary from the reported total.
 
 Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).

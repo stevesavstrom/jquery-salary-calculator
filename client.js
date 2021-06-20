@@ -2,7 +2,7 @@
 console.log( 'js is working');
 // starting with empty employees array
 let employees = [];
-// starting with $0 in car prices
+// starting with $0 in monthly salary
 const totalValue = 0;
 
 $( document ).ready( readyNow );
@@ -29,7 +29,7 @@ function addEmployee(){
 	let id = $("#id");
 	let title = $("#title");
 	let salary = $("#salary");
-
+	// Make all inputs required
 	if(
 	firstName.val() == false || 
 	lastName.val() == false || 
@@ -93,7 +93,12 @@ function addEmployee(){
 	// display totalSalary
 	let el = $( '#totalOut' );
 	el.empty();
-	el.append('$', newTotal );
+	// Display newTotal in red if over $20,000
+	if(newTotal > 20000){
+		el.append('$', newTotal ).css('color', 'red');
+	} else {
+		el.append('$', newTotal );
+	}
   } // end calculateTotal
 
   function newEmployee(firstName, lastName, id, title, salary){
