@@ -8,16 +8,17 @@ const totalValue = 0;
 $( document ).ready( readyNow );
 
 function readyNow(){
-// handle click event
+// handle click event for input fields
 $('#submitButton').on('click', addEmployee);
-// target priceOut by id
+// target totalOut by id
 let el = $('#totalOut')
 el.empty();
 el.append('$', totalValue);
-// Delete employee on click
+// Delete employee row on click
 $('#employeesOut').on('click', '#employeeRow', deleteEmployee);
 } // end readyNow
 
+// Deletes employee row
 function deleteEmployee() {
 	$(this).remove();
   }
