@@ -1,9 +1,19 @@
-# Salary Calculator
+# SALARY CALCULATOR
 
 ## Description
 This application records employee salaries and adds salaries up to report monthly costs.
+- Input employee information into a user interface.
+- Display employee information in a table on the DOM.
+- Add total annual salaries and calculate total monthly salaries.
+- Indicate when monthly salaries exceed $20,000.
+- Functionality to delete selected rows of employee information.
 
+## Screen Shot
+![Screen Shot](/screenshot.png)
+
+## Project Requirements
 The application includes the following features and functionality:
+
 [x] Input form that collects employee first name, last name, ID number, job title, annual salary.
 
 [x] A 'Submit' button that collects the form information and stores the information to calculate the monthly costs.
@@ -22,4 +32,7 @@ The application includes the following features and functionality:
 
 [x] Create a delete button that removes an employee from the DOM. For Base mode, it does not need to remove that Employee's salary from the reported total.
 
-Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).
+## Stretch Goals
+[x] Add styling or extra functionality that fits with the theme of this assignment.
+
+[ ] Once the employee is deleted, update the total spend on salaries account for this employee's removal.
