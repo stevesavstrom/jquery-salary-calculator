@@ -10,12 +10,17 @@ $( document ).ready( readyNow );
 function readyNow(){
 // handle click event
 $( '#submitButton').on('click', addEmployee);
-
 // target priceOut by id
 let el = $( '#totalOut' )
 el.empty();
 el.append('$', totalValue );
+// Delete employee on click
+$('#employeesOut').on('click', '#employeeRow', deleteEmployee);
 } // end readyNow
+
+function deleteEmployee() {
+	$(this).remove();
+  }
 
 // Adds employee to array when inputs are entered and clicked
 function addEmployee(){
@@ -37,7 +42,7 @@ function addEmployee(){
 		lastName.val(), 
 		id.val(), 
 		title.val(), 
-		salary.val());
+		Number(salary.val()));
 	  }
 	// Clears input fields
 	$( "#firstName" ).val('');
@@ -61,13 +66,13 @@ function addEmployee(){
 	  // Displays inputs in DOM. Shout out to Matt for help on the image syntax!
 	  el.append(` 
 	  <table>
-		<tr>
+		<tr id="employeeRow">
 		  <td>${employee.firstName}</td>
 		  <td>${employee.lastName}</td>
 		  <td>${employee.id}</td>
 		  <td>${employee.title}</td>
 		  <td>${employee.salary}</td>
-		  <td><button id="deleteButton">Delete</button></td>
+		  <td><button id="deleteButton"><img src="trash.png"></button></td>
 		</tr>
 	  </table>
 	  `);
@@ -76,16 +81,16 @@ function addEmployee(){
 
   function calculateTotal(){
 	console.log( 'in calculateTotal' );
-	// loop through garage array
+	// loop through employee array
 	let totalSalary = 0;
 	for (let i = 0; i < employees.length; i++) {
-	// for each car, add up total of all prices
-	totalSalary += Number( employees[ i ].salary / 12 );
+	// for each employee, add up total of all salaries and divide by 12
+	totalSalary += employees[ i ].salary / 12;
 	} // end for loop
 	console.log( 'totalSalary', totalSalary);
 	// add totalPrices to totalPrice
-	const newTotal = totalValue + totalSalary;
-	// display totalPrice
+	const newTotal = Math.round(totalValue + totalSalary);
+	// display totalSalary
 	let el = $( '#totalOut' );
 	el.empty();
 	el.append('$', newTotal );

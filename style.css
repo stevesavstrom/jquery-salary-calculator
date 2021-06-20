@@ -1,56 +1,100 @@
 body {
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: Helvetica, sans-serif;
+	padding: 10px;
+	
 }
 
 h1 {
 	text-align: center;
+	color: #ffffff;
+	font-size: 38px;
+}
+
+h3 {
+	margin-left: 25px;
+}
+
+img{
+	height: 25px;
 }
 
 input {
-	padding: 5px;
-	margin: 5px;;
-}
-
-button {
+	width: 14%;
 	padding: 5px;
 	margin: 5px;
-	height: 2em;
-	width: 4.5em;
-	border: 1px solid;
-	border-radius: 3px;
+	margin-left: 10px;
+	margin-bottom: 20px;
+}
+
+#deleteButton {
+	border: none;
+	background-color: #ffffff;
+	border-radius: 5px;;
+	color: black;
+	padding: 10px 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+
+#deleteButton:hover{
+	background-color: #FF7F7F;
+	background-blend-mode: darken;
+	transition: 0.5s ease;
+}
+
+#submitButton {
+	background-color: #4402cf;
+	border: none;
+	color: white;
+	padding: 10px 18px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	margin: 2px 2px;
+	cursor: pointer;
 }
 
 table {
+	font-size: 18px;
 	border-collapse: collapse;
 	table-layout: fixed;
-	width: 90vw;
+	width: 95vw;
 	word-wrap: break-word;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 th {
-	background-color:blue;
+	background-color: #4402cf;
+	font-weight:400;
 	color: #ffffff;
-	border: 1px solid gray;
-	text-align: left;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	text-align: center;
 	padding: 15px;
 }
   
 td {
-	border: 1px solid gray;
-	text-align: left;
+	border-bottom: 1px solid black;
+	border-top: 0;
+	text-align: center;
 	padding: 15px;
 }
 
-ul {
-	list-style-type: none;
-	text-align: left;
-	word-spacing: 50px;
-  }
-
-li{
-	display: inline;
-  }
-
 #totalMonthly {
 	text-align: center;
+	font-size: 18px;
+}
+
+#header{
+	background-color: #4402cf;
+	padding: 2%;
+	width: 100%;
+	height: 100%;
+	margin-left: -20px;
 }
