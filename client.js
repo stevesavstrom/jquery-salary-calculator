@@ -90,7 +90,7 @@ function addEmployee(){
 	totalSalary += employees[ i ].salary / 12;
 	} // end for loop
 	console.log( 'totalSalary', totalSalary);
-	// add totalPrices to totalPrice
+	// add totalSalary to totalValue
 	const newTotal = Math.round(totalValue + totalSalary);
 	// display totalSalary
 	let el = $( '#totalOut' );
